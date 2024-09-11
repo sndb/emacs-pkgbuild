@@ -1,5 +1,5 @@
 pkgname="emacs-git"
-pkgver=30.0.50.171761
+pkgver=30.0.90.174229
 pkgrel=1
 pkgdesc="GNU Emacs. Development master branch."
 arch=('x86_64')
@@ -28,7 +28,7 @@ depends=('gnutls'
 makedepends=('git' 'xorgproto' 'libxi')
 provides=('emacs')
 conflicts=('emacs')
-source=("emacs-git::git+https://git.savannah.gnu.org/git/emacs.git")
+source=("emacs-git::git+https://git.savannah.gnu.org/git/emacs.git#branch=emacs-30")
 options=(!strip)
 b2sums=('SKIP')
 
