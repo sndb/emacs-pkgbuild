@@ -1,5 +1,5 @@
 pkgname="emacs-git"
-pkgver=30.0.90.174229
+pkgver=30.0.92.174409
 pkgrel=1
 pkgdesc="GNU Emacs. Development master branch."
 arch=('x86_64')
@@ -53,20 +53,12 @@ build() {
 		--libexecdir=/usr/lib
 		--localstatedir=/var
 		--mandir=/usr/share/man
-		--with-x-toolkit=gtk3
 		--with-cairo
 		--with-harfbuzz
 		--with-native-compilation
 		--with-tree-sitter
-		--without-sound
-		--without-gpm
+		--with-pgtk
 		--without-compress-install
-		--without-toolkit-scroll-bars
-		--without-xinput2
-		--without-xaw3d
-		--without-m17n-flt
-		--without-gconf
-		--without-gsettings
 	)
 
 	cd "$srcdir/emacs-git/build"
